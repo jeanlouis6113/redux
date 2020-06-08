@@ -1,14 +1,14 @@
 const counterReducer = (state = 0, action) => {
     switch (action.type) {
-        case 'add':
+        case 'ADD':
             return state + 1;
-        case 'remove':
+        case 'REMOVE':
             return state - 1;
-        case 'addTen':
+        case 'ADD_TEN':
             return state + 10;
-        case 'removeTen':
+        case 'REMOVE_TEN':
             return state - 10;
-        case 'reset':
+        case 'RESET':
             return state = 0;
         default:
             return state;
